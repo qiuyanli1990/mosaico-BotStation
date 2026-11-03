@@ -119,7 +119,7 @@ download mode and select the actual download-mode serial port for an
 application-only update:
 
 ```sh
-bash scripts/idf.sh -p /dev/cu.usbmodemDOWNLOAD app-flash
+bash scripts/idf.sh -p /dev/cu.usbmodemDOWNLOAD flash
 ```
 
 Find the newly enumerated runtime CDC port after boot:
