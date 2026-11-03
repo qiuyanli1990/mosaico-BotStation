@@ -1,0 +1,35 @@
+menu "Mosaico MyBot demo"
+    config MOSAICO_USB_HIGH_SPEED
+        bool
+        default y if IDF_TARGET_ESP32S31
+
+    config MYBOT_WIFI_SSID
+        string "Wi-Fi SSID"
+        default ""
+    config MYBOT_WIFI_PASSWORD
+        string "Wi-Fi password"
+        default ""
+    config MYBOT_DEVICE_API_BASE_URL
+        string "MyBot Device API base URL"
+        default "https://botstation.agora.io/api"
+    config MYBOT_WHIP_BASE_URL
+        string "Agora duplex WHIP base URL"
+        default "https://ap-webrtc-whip.ap.sd-rtn.com"
+    config MYBOT_APP_ID
+        string "Agora App ID"
+        default ""
+    config MYBOT_HARDWARE_MODEL
+        string "MyBot hardware model"
+        default "mosaico"
+    config MYBOT_APP_CERT
+        string "Agora App Certificate (required for local WHIP token)"
+        default ""
+    config MYBOT_AEC_BYPASS
+        bool "Bypass AEC for microphone/reference A/B measurements"
+        default n
+        help
+            Keep stereo ES8311 capture and resampling, but send the microphone
+            channel without echo cancellation. Diagnostic builds only; leave
+            disabled for normal conversations.
+endmenu
+
