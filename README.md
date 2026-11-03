@@ -85,13 +85,6 @@ Create your own local settings from the placeholder-only template:
 cp sdkconfig.local.example sdkconfig.local
 ```
 
-Edit `sdkconfig.local` with your own App ID and matching App Certificate:
-
-```text
-CONFIG_MYBOT_APP_ID="YOUR_APP_ID"
-CONFIG_MYBOT_APP_CERT="YOUR_APP_CERTIFICATE"
-```
-
 The default Device API is `https://botstation.agora.io/api`; the default hardware
 model is `mosaico`. Access to Bot Station and its cloud conversation services is
 required. Wi-Fi credentials are optional; configure them on the touchscreen
