@@ -1,10 +1,6 @@
 # Copy to sdkconfig.local before the first build. This file contains no secrets.
 # Optional fallback; leave empty to configure Wi-Fi on the touchscreen.
-CONFIG_MYBOT_WIFI_SSID=""
-CONFIG_MYBOT_WIFI_PASSWORD=""
 CONFIG_MYBOT_DEVICE_API_BASE_URL="https://botstation.agora.io/api"
 CONFIG_MYBOT_WHIP_BASE_URL="https://ap-webrtc-whip.ap.sd-rtn.com"
 CONFIG_MYBOT_HARDWARE_MODEL="mosaico"
-CONFIG_MYBOT_APP_ID="YOUR_APP_ID"
-CONFIG_MYBOT_APP_CERT="YOUR_APP_CERTIFICATE"
 
